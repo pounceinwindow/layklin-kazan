@@ -10,26 +10,52 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
+<script src="app.js?v=2" defer></script>
 </head>
 <body>
 <header class="header shell">
   <a class="logo" href="#top" aria-label="Лайклин — на главную"><span class="logo-mark" aria-hidden="true">L</span>лайклин<span class="logo-dot">.</span></a>
-  <nav aria-label="Навигация"><a href="#services">Услуги</a><a href="#how">Как обратиться</a><a href="#contacts">Контакты</a></nav>
-  <a class="header-phone" href="tel:+79600380976">+7 960 038-09-76</a><a class="nav-call" href="tel:+79600380976">Позвонить</a>
+  <nav aria-label="Навигация"><a href="#services">Услуги</a><a href="#how">Быстрый запрос</a><a href="#contacts">Контакты</a></nav>
+  <a class="header-phone" href="tel:+79600380976">+7 960 038-09-76</a><a class="nav-call" href="https://t.me/likeclin">Telegram</a>
 </header>
 <main id="top">
   <section class="hero shell">
-    <div class="hero-copy"><p class="location"><span aria-hidden="true"></span> Казань</p><h1>Уборка и<br>химчистка<br><span>в Казани.</span></h1><p class="lead">Клининг и химчистка от «Лайклин». Расскажите, что нужно привести в порядок, и обсудите детали по телефону.</p><div class="actions"><a class="button primary" href="tel:+79600380976">Обсудить задачу <span aria-hidden="true">↗</span></a><a class="inline-link" href="#services">Посмотреть услуги <span aria-hidden="true">↓</span></a></div><div class="hero-bottom"><span class="spark" aria-hidden="true">✳</span> Чистота для вашего пространства</div></div>
+    <div class="hero-copy"><p class="location"><span aria-hidden="true"></span> Казань</p><h1>Уборка и<br>химчистка<br><span>в Казани.</span></h1><p class="lead">Выберите уборку или химчистку и опишите задачу. Готовый текст откроется в чате «Лайклин».</p><div class="actions"><a class="button primary" href="#how">Подготовить запрос <span aria-hidden="true">↓</span></a><a class="inline-link" href="tel:+79600380976">Позвонить</a></div></div>
     <figure class="hero-image"><img src="assets/hero.webp" alt="Светлый интерьер, салфетка и средство для уборки — иллюстрация" fetchpriority="high"></figure>
-    <span class="side-note" aria-hidden="true">LAYKLIN / KAZAN</span>
+
   </section>
-  <section class="services shell" id="services"><div class="section-intro"><div><p class="section-label">Чем можем помочь</p><h2>Чистота начинается<br>с вашего запроса.</h2></div><p>У каждой задачи свои детали. Обсудите с «Лайклин» подходящую услугу и её стоимость.</p></div><div class="service-grid">
-    <article class="service service-green"><div class="service-top"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 23 24 9l16 14M13 21v18h22V21M20 39V28h8v11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Клининг</h3><p>Расскажите, какое пространство нужно убрать.</p><a href="tel:+79600380976" aria-label="Уточнить услуги клининга по телефону">Уточнить детали <span aria-hidden="true">↗</span></a></article>
-    <article class="service service-lilac"><div class="service-top"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 7c3 6 11 13 11 20a11 11 0 0 1-22 0c0-7 8-14 11-20Z" stroke="currentColor" stroke-width="2"/><path d="M18 28c0 3 2 5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Химчистка</h3><p>Уточните, какие изделия можно почистить.</p><a href="tel:+79600380976" aria-label="Уточнить услуги химчистки по телефону">Уточнить детали <span aria-hidden="true">↗</span></a></article>
+  <section class="services shell" id="services"><div class="section-intro"><div><h2>Выберите услугу</h2></div><p>Сроки и стоимость можно уточнить в чате или по телефону.</p></div><div class="service-grid">
+    <article class="service service-green"><div class="service-top"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 23 24 9l16 14M13 21v18h22V21M20 39V28h8v11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Клининг</h3><p>Расскажите, какое пространство нужно убрать.</p><a href="#how" data-pick="Клининг">Подготовить запрос на уборку <span aria-hidden="true">↓</span></a></article>
+    <article class="service service-lilac"><div class="service-top"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 7c3 6 11 13 11 20a11 11 0 0 1-22 0c0-7 8-14 11-20Z" stroke="currentColor" stroke-width="2"/><path d="M18 28c0 3 2 5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Химчистка</h3><p>Уточните, какие изделия можно почистить.</p><a href="#how" data-pick="Химчистка">Подготовить запрос на химчистку <span aria-hidden="true">↓</span></a></article>
   </div></section>
-  <section class="steps" id="how"><div class="steps-inner shell"><div><p class="section-label">Как обратиться</p><h2>Начнём<br>с разговора.</h2><p class="steps-lead">Позвоните и расскажите о задаче — детали, сроки и стоимость можно обсудить с компанией.</p></div><div class="steps-list"><div><span>1</span><p><strong>Расскажите о задаче</strong>Что и где нужно убрать или почистить.</p></div><div><span>2</span><p><strong>Уточните детали</strong>Обсудите объём работ, время и стоимость.</p></div><div><span>3</span><p><strong>Выберите удобное время</strong>Согласуйте дальнейшие действия с «Лайклин».</p></div></div></div></section>
-  <section class="contact shell" id="contacts"><div><p class="section-label">Контакты</p><h2>Есть задача?<br><span>Давайте обсудим.</span></h2><p>Позвоните, чтобы уточнить услуги и условия.</p></div><div class="contact-box"><a class="contact-number" href="tel:+79600380976">+7 960 038-09-76 <span aria-hidden="true">↗</span></a><p>Казань, улица Нигматуллина, 9</p><a class="map" href="https://yandex.com/maps/org/layklin/165116537722/" target="_blank" rel="noopener noreferrer">Открыть на Яндекс Картах ↗</a></div></section>
+  <section class="steps" id="how" aria-labelledby="request-heading">
+  <div class="steps-inner shell request-layout">
+    <div class="request-copy">
+      <h2 id="request-heading">Один вопрос вместо долгой переписки</h2>
+      <p class="steps-lead">Опишите самое важное. В Telegram сможете дописать детали и приложить фото.</p>
+      <aside class="request-hint" id="request-hint">
+        <strong id="hint-title">Что поможет оценить уборку</strong>
+        <p id="hint-body">Тип помещения, примерная площадь и что важно убрать в первую очередь.</p>
+      </aside>
+    </div>
+    <form id="request-form" class="request-form">
+      <fieldset>
+        <legend>Что нужно?</legend>
+        <div class="request-options">
+          <label><input type="radio" name="service" value="Клининг" checked><span>Уборка</span></label>
+          <label><input type="radio" name="service" value="Химчистка"><span>Химчистка</span></label>
+        </div>
+      </fieldset>
+      <label for="task-description" id="task-label">Что и где нужно убрать?</label>
+      <textarea id="task-description" name="details" rows="3" maxlength="280" placeholder="Например, квартира 55 м², кухня и санузел" required></textarea>
+      <button class="button primary" type="submit">Открыть черновик в Telegram <span aria-hidden="true">↗</span></button>
+      <p class="request-note">Отправку вы подтверждаете в Telegram.</p>
+      <noscript><a class="inline-link" href="https://t.me/likeclin">Написать в Telegram напрямую</a></noscript>
+    </form>
+  </div>
+</section>
+  <section class="contact shell" id="contacts"><div><p class="section-label">Контакты</p><h2>Есть задача?<br><span>Давайте обсудим.</span></h2><p>Позвоните, чтобы уточнить услуги и условия.</p></div><div class="contact-box"><a class="contact-number" href="tel:+79600380976">+7 960 038-09-76 <span aria-hidden="true">↗</span></a><p>Казань, улица Нигматуллина, 9</p><a class="map direct-chat" href="https://t.me/likeclin">Написать в Telegram ↗</a><a class="map" href="https://yandex.com/maps/org/layklin/165116537722/" target="_blank" rel="noopener noreferrer">Открыть на Яндекс Картах ↗</a></div></section>
 </main>
 <footer class="footer shell"><a class="logo footer-logo" href="#top"><span class="logo-mark" aria-hidden="true">L</span>лайклин<span class="logo-dot">.</span></a><span>Концепция сайта · изображение создано с помощью ИИ</span><a href="#top">Наверх ↑</a></footer>
 </body>
